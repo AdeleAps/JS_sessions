@@ -1,2 +1,2 @@
 # JS_sessions
-For the She Goes Teach JavaScript course
+For the She Goes Tech JavaScript course
