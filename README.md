@@ -1,2 +1,2 @@
 # JS_sessions
-For the She Goes Tech JavaScript course
+Final project for the She Goes Tech course
