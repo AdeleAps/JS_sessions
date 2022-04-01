@@ -1,0 +1,69 @@
+:root {
+    --clr-bg-dark: #111111;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+}
+
+header {
+    height: 100vh;
+    background-color: var(--clr-bg-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 35px;
+} 
+
+.h1-heading {
+    font-weight: 200;
+    font-size: 35px;
+    line-height: 40px;
+    margin: 20px;
+}
+
+.body-text {
+    font-weight: 300;
+    font-size: 17px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: transparent;
+    position: relative;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px 50px;
+    border-width: 1px;
+    border-color: white;
+    letter-spacing: 2px;
+}
+
+.btn:hover {
+    color: var(--clr-bg-dark);
+    background-color: white;
+    transition-delay: .3s;
+}
+
+.subsection {
+    display: flex;
+    width: 100%;
+    z-index: 1;
+    justify-content: center;
+}
+
+.subsection img {
+    position: relative;
+    z-index: 2;
+    bottom: 70px;
+    box-shadow: 1px 10px 20px rgb(161, 158, 158);
+}
