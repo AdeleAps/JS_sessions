@@ -1,40 +1,20 @@
 :root {
     --clr-bg-dark: #111111;
+    --clr-line-brown: rgb(161, 158, 158);
+}
+
+.hidden {
+    display: none;
 }
 
 body {
     font-family: 'Spartan', sans-serif;
 }
 
-header {
-    height: 100vh;
-    background-color: var(--clr-bg-dark);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: white;
-    position: relative;
-}
-
 .logo {
     font-weight: 700;
     font-size: 35px;
 } 
-
-.h1-heading {
-    font-weight: 200;
-    font-size: 35px;
-    line-height: 40px;
-    margin: 20px;
-}
-
-.body-text {
-    font-weight: 300;
-    font-size: 17px;
-    padding: 0 20px;
-    margin-bottom: 30px;
-}
 
 .btn {
     background-color: transparent;
@@ -54,16 +34,249 @@ header {
     transition-delay: .3s;
 }
 
+header {
+    height: 100vh;
+    background-color: var(--clr-bg-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.h1-heading {
+    font-weight: 200;
+    font-size: 35px;
+    line-height: 40px;
+    margin: 20px;
+}
+
+.body-text {
+    font-weight: 300;
+    font-size: 17px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+
 .subsection {
     display: flex;
     width: 100%;
     z-index: 1;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 90px;
 }
 
-.subsection img {
+.image-container img {
     position: relative;
     z-index: 2;
     bottom: 70px;
-    box-shadow: 1px 10px 20px rgb(161, 158, 158);
+    box-shadow: 0px 40px 40px -10px rgb(161, 158, 158);
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 50%;
+}
+.image-container::after {
+    content: url(./images/patterns/pattern-divide.svg);
+    margin-top: -30px;
+}
+
+.subsection .logo {
+    margin: 30px 40px;
+    font-size: 32px;
+}
+
+.subsection p {
+    color: #242B37;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0 20px;
+}
+
+.image-container.second-container img{
+    position: static;
+}
+
+.image-container.second-container::after,
+.highlights .logo::before {
+    margin-top: 35px;
+}
+
+.highlights {
+    background-color: var(--clr-bg-dark);
+    display: flex;
+    flex-direction: column;
+}
+
+.highlights .logo {
+    color: white;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+.highlights .subsection::before {
+    content: url(./images/patterns/pattern-divide.svg);
+    margin-top: 70px;
+}
+
+.highlights .subsection {
+    margin-bottom: 30px;
+}
+.highlights .subsection p {
+    color: white;
+    font-weight: 300;
+}
+
+.menu-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid rgb(66, 64, 60);
+    width: min-content;
+    padding-top: 30px;
+}
+
+.menu-selection-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-selection h3 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.menu-selection p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: auto 15px 30px 15px;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.tabs img {
+    box-shadow: 0px 40px 40px -10px rgb(161, 158, 158);
+    margin-bottom: 25px;
+}
+
+.tab-button {
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 2px;
+    margin: 8px;
+    opacity: 50%;
+    display: inline-block;
+}
+
+.tab-button::after {
+   content: "";
+   display: block;
+   width: 0;
+   border-bottom: 1px solid var(--clr-line-brown);
+   margin: 0 auto;
+   transition:all 0.3s linear 0s;
+   margin-top: 5px;
+}
+.tab-button:hover {
+    opacity: 100%;
+    font-weight: 600;
+    transition-timing-function: ease;
+    transition: 1s;
+}
+
+.tab-button:hover::after {
+   width: 60%;
+}
+
+.tabs .logo {
+    font-size: 32px;
+    margin: 15px;
+}
+
+.tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tab p {
+    margin-inline: 20px;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.tabs .btn {
+    background-color: var(--clr-bg-dark);
+    margin: 25px;
+}
+
+.tabs .btn:hover {
+    background-color: transparent;
+    border: var(--clr-bg-dark) solid 1px;
+}
+
+.booking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url(./images/homepage/ready-bg-mobile\ 2.jpg);
+    padding-bottom: 80px;
+}
+
+.booking .logo {
+    margin: 70px 25px 20px 30px;
+    color: white;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+footer {
+    background-color: var(--clr-bg-dark);
+    color: white;
+    text-align: center;
+    padding: 60px 0px 60px 0;
+    width: 100%;
+}
+
+footer h2 {
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 8px;
+    letter-spacing: 2px;
+}
+
+footer div:last-child {
+    margin-top: 30px;
 }
