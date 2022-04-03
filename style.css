@@ -3,10 +3,6 @@
     --clr-line-brown: rgb(161, 158, 158);
 }
 
-.hidden {
-    display: none;
-}
-
 body {
     font-family: 'Spartan', sans-serif;
 }
@@ -34,6 +30,8 @@ body {
     transition-delay: .3s;
 }
 
+/* header */
+
 header {
     height: 100vh;
     background-color: var(--clr-bg-dark);
@@ -59,6 +57,7 @@ header {
     margin-bottom: 30px;
 }
 
+/* enjoyable place for all the family */
 
 .subsection {
     display: flex;
@@ -70,13 +69,6 @@ header {
     margin-bottom: 90px;
 }
 
-.image-container img {
-    position: relative;
-    z-index: 2;
-    bottom: 70px;
-    box-shadow: 0px 40px 40px -10px rgb(161, 158, 158);
-}
-
 .image-container {
     display: flex;
     flex-direction: column;
@@ -84,6 +76,14 @@ header {
     align-items: center;
     max-height: 50%;
 }
+
+.image-container img {
+    position: relative;
+    z-index: 2;
+    bottom: 70px;
+    box-shadow: 0px 40px 40px -10px rgb(161, 158, 158);
+}
+
 .image-container::after {
     content: url(./images/patterns/pattern-divide.svg);
     margin-top: -30px;
@@ -110,6 +110,8 @@ header {
 .highlights .logo::before {
     margin-top: 35px;
 }
+
+/* menu higlights */
 
 .highlights {
     background-color: var(--clr-bg-dark);
@@ -167,6 +169,8 @@ header {
     margin: auto 15px 30px 15px;
 }
 
+/* three tabs */
+
 .tabs {
     display: flex;
     flex-direction: column;
@@ -174,6 +178,10 @@ header {
     padding-top: 70px;
     text-align: center;
     padding-bottom: 80px;
+}
+
+.tabs .hidden {
+    display: none;
 }
 
 .tabs img {
@@ -240,6 +248,8 @@ header {
     border: var(--clr-bg-dark) solid 1px;
 }
 
+/* booking */
+
 .booking {
     display: flex;
     flex-direction: column;
@@ -256,6 +266,8 @@ header {
     line-height: 40px;
     font-weight: 600;
 }
+
+/* footer */
 
 footer {
     background-color: var(--clr-bg-dark);
