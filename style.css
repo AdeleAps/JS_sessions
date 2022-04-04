@@ -180,7 +180,8 @@ header {
     padding-bottom: 80px;
 }
 
-.tabs .hidden {
+.tabs .hidden,
+.form-section  {
     display: none;
 }
 
@@ -290,5 +291,34 @@ footer p {
 }
 
 footer div:last-child {
-    margin-top: 30px;
+    margin-top: 30px; 
 }
+
+/* ***** booking page ***** */
+
+/* booking header */
+
+.booking-header {
+    background-image: url(./images/booking/hero-bg-mobile.jpg);
+    height: auto;
+}
+
+.booking-header .logo {
+    margin: 70px auto 50px auto;
+}
+
+.booking-header h1 {
+    margin-top: 0px;
+}
+
+.booking-header .body-text {
+    padding: 0 15px;
+}
+
+.booking-header .btn {
+    margin-bottom: 150px;
+}
+
+/* .form-section {
+    backgr
+} */
