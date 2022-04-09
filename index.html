@@ -14,15 +14,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;600;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
-<div class="body-container">
   <header>
     <img class="hidden-tablet hidden-desktop" src="./images/homepage/hero-bg-mobile.jpg" alt="A photo of seafood dish.">
     <img class="hidden-mobile hidden-desktop" src="./images/homepage/hero-bg-tablet.jpg" alt="A photo of seafood dish.">
-    <div class="header-wrapper">
-      <!-- <h2 class="logo">dine</h2> -->
-
+    <div class="header-wrapper absolute-center">
       <img class="logo-svg" src="./images/logo.svg" alt="dine logo">
-
       <h1 class="h1-heading">Exquisite dining <br> since 1989</h1>
       <p class="body-text">Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from the comfort of our farmhouse.</p>
       <a href="booking.html">
@@ -30,57 +26,79 @@
       </a>
     </div>
   </header>
-  <section>
+  <section class="section absolute-center">
     <div class="subsection">
-      <div class="image-container">
-        <img src="./images/homepage/enjoyable-place-mobile.jpg" alt="Photo of the countryside.">
+      <img class="hidden-tablet hidden-desktop" src="./images/homepage/enjoyable-place-mobile.jpg" alt="Photo of the countryside.">
+      <img class="hidden-mobile hidden-desktop" src="./images/homepage/enjoyable-place-tablet.jpg" alt="Photo of the countryside.">
+      <img class="divider" src="./images/patterns/pattern-divide.svg" alt="Photo of divider">
+      <div class="subsection-text-wrapper">
+        <h2 class="subsection-title">Enjoyable place for all the family</h2>
+        <p class="subsection-par"> Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange 
+          a tour of the farm before your meal.</p>
       </div>
-      <h2 class="logo">Enjoyable place for all the family</h2>
-      <p> Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange 
-        a tour of the farm before your meal.</p>
-      </div>
+    </div>
     <div class="subsection">
-      <div class="image-container second-container">
-        <img src="./images/homepage/locally-sourced-mobile.jpg" alt="Photo of a dish being prepared.">
-      </div>
-      <h2 class="logo">The most locally sourced food</h2>
-      <p>All our ingredients come directly from our farm or local fishery. So you can be sure that you’re 
+      <img class="hidden-tablet hidden-desktop" src="./images/homepage/locally-sourced-mobile.jpg" alt="Photo of a dish being prepared.">
+      <img class="hidden-mobile hidden-desktop" src="./images/homepage/locally-sourced-tablet.jpg" alt="Photo of a dish being prepared.">
+      <img class="divider" src="./images/patterns/pattern-divide.svg" alt="Photo of divider">
+      <div class="subsection-text-wrapper">
+        <h2 class="subsection-title">The most locally sourced food</h2>
+        <p class="subsection-par">All our ingredients come directly from our farm or local fishery. So you can be sure that you’re 
         eating the freshest, most sustainable food.</p>
       </div>
     </div>
   </section>
-  <section class="highlights">
-    <div class="subsection">
-      <h2 class="logo">  A few highlights from our menu</h2>
-      <p>  We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites. 
-        Our menu is revamped every season.
-      </p>
+  <section class="section-highlights absolute-center">
+    <img class="divider" src="./images/patterns/pattern-divide.svg" alt="Photo of divider">
+    <div class="subsection-text-wrapper">
+      <h2 class="subsection-title">A few highlights from our menu</h2>
+      <p class="subsection-par">We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites. Our menu is revamped every season.</p>
     </div>
+
+
     <div class="menu-selection-container">
       <div class="menu-selection">
-        <img src="./images/homepage/salmon-mobile.jpg" alt="Seared salmon fillet.">
-        <h3>Seared Salmon Fillet</h3>
-        <p>Our locally sourced salmon served with a refreshing buckwheat summer salad.</p>
+        <img class="hidden-tablet hidden-desktop" src="./images/homepage/salmon-mobile.jpg" alt="Seared salmon fillet.">
+        <img class="hidden-mobile hidden-desktop" src="./images/homepage/salmon-desktop-tablet.jpg" alt="Seared salmon fillet.">
+        <div class="menu-selection-text-wrapper">
+          <h3 class="subsection-title">Seared Salmon Fillet</h3>
+          <p class="subsection-par">Our locally sourced salmon served with a refreshing buckwheat summer salad.</p>
+        </div>
+      </div>
+      
+      <div class="menu-selection">
+        <img class="hidden-tablet hidden-desktop" src="./images/homepage/beef-mobile.jpg" alt="Rosemary Filet Mignon">
+        <img class="hidden-mobile hidden-desktop" src="./images/homepage/beef-desktop-tablet.jpg" alt="Rosemary Filet Mignon">
+        <div class="menu-selection-text-wrapper">
+          <h3 class="subsection-title">Rosemary Filet Mignon</h3>
+          <p class="subsection-par">Our prime beef served to your taste with a delicious choice of seasonal sides.</p>
+        </div>
       </div>
       <div class="menu-selection">
-        <img src="./images/homepage/beef-mobile.jpg" alt="Rosemary Filet Mignon">
-        <h3>Rosemary Filet Mignon</h3>
-        <p>Our prime beef served to your taste with a delicious choice of seasonal sides.</p>
+        <img class="hidden-tablet hidden-desktop" src="./images/homepage/chocolate-mobile.jpg" alt="Summer Fruit Chocolate Mousse.">
+        <img class="hidden-mobile hidden-desktop" src="./images/homepage/chocolate-desktop-tablet.jpg" alt="Summer Fruit Chocolate Mousse.">
+        <div class="menu-selection-text-wrapper">
+          <h3 class="subsection-title">Summer Fruit Chocolate Mousse</h3>
+          <p class="subsection-par">Creamy mousse combined with summer fruits and dark chocolate shavings.</p>
       </div>
-      <div class="menu-selection">
-        <img src="./images/homepage/chocolate-mobile.jpg" alt="Summer Fruit Chocolate Mousse.">
-        <h3>Summer Fruit Chocolate Mousse</h3>
-        <p>Creamy mousse combined with summer fruits and dark chocolate shavings.</p>
       </div>
     </div>
   </section>
   <section class="tabs">
-    <img id="gathering-pic" class="tab-img" src="./images/homepage/family-gathering-mobile.jpg" alt="Family gathering.">
-    <img id="events-pic" class="tab-img hidden" src="./images/homepage/special-events-mobile.jpg" alt="Special events.">
-    <img id="social-pic" class="tab-img hidden" src="./images/homepage/social-events-mobile.jpg" alt="Social events.">
-    <button id="gathering-btn" class="tab-button">FAMILY GATHERING</button>
-    <button id="events-btn" class="tab-button">SPECIAL EVENTS</button>
-    <button id="social-btn" class="tab-button">SOCIAL EVENTS</button>
+    <div class="tab-img-wrapper">
+      <img id="gathering-pic" class="hidden-tablet hidden-desktop tab-img" src="./images/homepage/family-gathering-mobile.jpg" alt="Family gathering.">
+      <img id="events-pic" class="hidden-tablet hidden-desktop tab-img hidden" src="./images/homepage/special-events-mobile.jpg" alt="Special events.">
+      <img id="social-pic" class="hidden-tablet hidden-desktop tab-img hidden" src="./images/homepage/social-events-mobile.jpg" alt="Social events.">
+      <img id="gathering-pic" class="hidden-mobile hidden-desktop tab-img" src="./images/homepage/family-gathering-tablet.jpg" alt="Family gathering.">
+      <img id="events-pic" class="hidden-mobile hidden-desktop tab-img hidden" src="./images/homepage/special-events-tablet.jpg" alt="Special events.">
+      <img id="social-pic" class="hidden-mobile hidden-desktop tab-img hidden" src="./images/homepage/social-events-tablet.jpg" alt="Social events.">
+    </div>
+    <div class="tab-wrapper">
+      <button id="gathering-btn" class="tab-button">FAMILY GATHERING</button>
+      <button id="events-btn" class="tab-button">SPECIAL EVENTS</button>
+      <button id="social-btn" class="tab-button">SOCIAL EVENTS</button>
+    </div>
+  
     <div id="gathering" class="tab">
       <h2 class="logo">Family Gathering</h2>
       <p>We love catering for entire families. So please bring everyone along for a special meal with your 
@@ -98,7 +116,7 @@
     </div>
     <a href="booking.html"><button class="btn">BOOK A TABLE</button></a>
   </section>
-  <section class="booking">
+  <!-- <section class="booking">
     <h2 class="logo">Ready to make a reservation?</h2>
     <a href="booking.html"><button class="btn">BOOK A TABLE</button></a>
   </section>
@@ -114,8 +132,7 @@
       <p>Mon - Fri: 09:00 AM - 10:00 PM</p>
       <p> Sat - Sun: 09:00 AM - 11:30 PM</p>
     </div>
-  </footer>
-</div>
+  </footer> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
