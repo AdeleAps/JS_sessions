@@ -406,12 +406,12 @@ body {
     }
 }
 
-/* .logo {
+.logo {
     font-weight: 700;
     font-size: 35px;
-}  */
+} 
 
-/* .btn {
+.btn {
     background-color: transparent;
     position: relative;
     color: white;
@@ -427,7 +427,7 @@ body {
     color: var(--clr-bg-dark);
     background-color: white;
     transition-delay: .3s;
-} */
+}
 
 /* header */
 
@@ -697,25 +697,254 @@ footer div:last-child {
 
 .booking-header {
     background-image: url(./images/booking/hero-bg-mobile.jpg);
+    background-size: cover;
     height: auto;
+    position: relative;
+    z-index: 1;
+}
+.booking-header .h1-heading {
+    position: static;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.booking-header a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .booking-header .logo {
     margin: 70px auto 50px auto;
 }
 
+
 .booking-header h1 {
     margin-top: 0px;
 }
 
 .booking-header .body-text {
-    padding: 0 15px;
+    padding: 0 20px;
+    position: static;
+    margin-bottom: 30px;
 }
 
 .booking-header .btn {
     margin-bottom: 150px;
 }
 
-/* .form-section {
-    backgr
-} */
+.btn-active {
+    background-color: white;
+    color: var(--clr-bg-dark);
+}
+
+.form-section {
+    background-color: white;
+    justify-content: center;
+    
+}
+
+.form-section form {
+    position: relative;
+    z-index: 2;
+    bottom: 75px;
+    background-color: white;
+    width: 85vw;
+    padding: 25px;
+    box-shadow: 0px 40px 40px -20px rgb(161, 158, 158);
+}
+
+form .btn {
+    background-color: black;
+    padding: 20px 20px;
+    width: 100%;
+    margin-top: 8px;
+}
+
+form .btn:hover {
+    border-color: var(--clr-bg-dark);
+}
+
+form .btn:focus {
+    background-color:var(--clr-bg-dark);
+    color: white;
+    box-shadow: none;
+    border-color: var(--clr-bg-dark);
+}
+
+form .btn:active {
+    background-color: inherit;
+    color: inherit;
+    border-color: none;
+    outline: black;
+}
+
+.people-selector {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.people-selector img {
+    height: min-content;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+#person-input {
+    font-weight: bold;
+}
+
+form .form-control {
+    border: transparent;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+    padding: 15px;
+}
+
+form .input-group {
+    gap: 5px;
+    align-items: center;
+}
+
+form .form-control:last-child {
+    padding: 15px 20px;
+    margin-top: 10px;
+}
+
+form .row {
+    --bs-gutter-x: 0;
+}
+
+.row .form-control {
+    padding-top: 10px;
+}
+
+.input-group label {
+    margin-right: 50px;
+}
+
+
+.reservations .form-section .lines {
+    display: none;
+}
+
+/* booking - tablet */
+
+@media only screen and (min-width: 480px) {
+    .booking-header {
+        background-image: url(./images/booking/hero-bg-tablet@2x.jpg);
+    }
+
+    .booking-header a {
+        align-self: flex-start;
+    }
+
+    .booking-header .logo {
+        margin: 70px;
+        font-size: 40px;
+    }
+
+    .booking-header .body-text {
+        width: 80%;
+    }
+
+    .form-section form {
+        width: 75%;
+        padding: 40px;
+ }
+
+    form .input-group {
+        gap: 15px;
+}
+
+    .row .form-control {
+    padding-top: 15px;
+}
+
+    #validationCustom01 {
+    padding-top: 0;
+}
+
+    footer {
+        display: flex;
+        padding: 70px 35px;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    footer .logo {
+        position: absolute;
+        left: 50px;
+    }
+    
+    footer div:last-child {
+        margin-top: 0;
+    }
+
+    footer .last-child {
+        margin-top: 30px !important;
+    }
+}
+
+/* booking - desktop */
+
+@media only screen and (min-width: 1025px) {
+    .booking-header {
+        background-image: url(./images/booking/hero-bg-desktop@2x.jpg);
+        align-items: flex-start;
+        padding: 80px;
+        padding-top: 30px;
+    }
+
+    .booking-header .logo {
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+    
+    .booking-header .btn {
+        display: none;
+    }
+    .booking-header .body-text {
+        width: 45%;
+        text-align: justify;
+        padding: 0;
+        font-weight: 300;
+    }
+
+    .form-section {
+        height: 40vh;
+    }
+    
+    .form-section form {
+        width: 40%;
+        left: 200px;
+        bottom: 200px;
+    }
+    .reservations .form-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./images/patterns/pattern-curve-bottom-right.svg);
+        background-repeat: no-repeat;
+    }
+
+    .reservations .form-section .lines {
+        display: block;
+        height: min-content;
+        position: relative;
+        left: 250px;
+        top: 55px;
+    }
+
+    .footer-container {
+        display: flex;
+        align-items: flex-start;
+        gap: 150px;
+    }
+
+    footer .last-child {
+        margin-top: 0 !important;
+    }
+}
