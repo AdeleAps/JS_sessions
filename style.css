@@ -110,6 +110,81 @@ body {
     letter-spacing: -0.1875px;
 }
 
+.tabs {
+    position: absolute;
+    width: 100%;
+}
+
+.tab-img-wrapper {
+    margin: 120px auto 56px auto;
+    display: flex;
+}
+
+.tab-img {
+    background: #EDEDED;
+    box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+    margin: 0 auto;
+}
+
+.tab-wrapper {
+    margin: 0 auto;
+}
+
+.tab-button {
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 8px 10px;
+    opacity: 50%;
+    color: #4C4C4C;
+    width: 223px;
+}
+
+.tab-button::after {
+    content: "";
+    display: block;
+    width: 0;
+    border-bottom: 1px solid var(--clr-line-brown);
+    margin: 0 auto;
+    transition: all 0.3s linear 0s;
+    margin-top: 5px;
+}
+
+.tab-button:hover {
+    opacity: 100%;
+    font-weight: 600;
+    transition-timing-function: ease;
+    transition: 1s;
+}
+
+.tab-button:hover::after {
+    width: 60%;
+}
+
+.event-tab {
+    text-align: center;
+    font-family: 'Spartan';
+    font-style: normal;
+    color: #242B37;
+}
+
+.event-title {
+    font-weight: 700;
+}
+
+.event-paragraph {
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.button-booking {
+    background-color: #111111;
+    color: #FFFFFF;
+    top: auto !important;
+    height: 64px;
+}
+
 /* Mobile */
 @media only screen and (max-width: 767px) {
     .hidden-mobile {
@@ -218,6 +293,60 @@ body {
 
     .menu-selection-text-wrapper .subsection-par {
         padding: 0 20px;
+    }
+
+    .tabs {
+        top: 3882px;
+    }
+
+    .tab-img {
+        width: 326px;
+        height: 400px;
+    }
+
+    #gathering-pic {
+        background: url("./images/homepage/family-gathering-mobile.jpg");
+    }
+
+    #events-pic {
+        background: url("./images/homepage/special-events-mobile.jpg");
+    }
+
+    #social-pic {
+        background: url("./images/homepage/social-events-mobile.jpg");
+    }
+
+    .tab-wrapper {
+        width: 239px;
+    }
+
+    .tab-button {
+        font-weight: 600;
+        line-height: 28px;
+    }
+
+    .event-tab {
+        width: 327px;
+        height: 156px;
+        margin: 24px auto 0 auto;
+    }
+
+    .event-title {
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.4px;
+    }
+
+    .event-paragraph {
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: -0.1875px;
+    }
+
+    .button-booking {
+        width: 245px;
+        margin: 24px auto 0 auto;
+        bottom: auto;
     }
 }
 
@@ -344,58 +473,53 @@ body {
     }
 
     .tabs {
-        position: absolute;
-        width: 100%;
         top: 3323px;
     }
 
     .tab-img {
-        background: #EDEDED;
-        box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
-        margin: 0 auto;
+        width: 573px;
+        height: 360px;
     }
 
-    .tab-img-wrapper {
-        margin: 120px auto 56px auto;
-        display: flex;
+    #gathering-pic {
+        background: url("./images/homepage/family-gathering-tablet.jpg");
+    }
+
+    #events-pic {
+        background: url("./images/homepage/special-events-tablet.jpg");
+    }
+
+    #social-pic {
+        background: url("./images/homepage/social-events-tablet.jpg");
     }
 
     .tab-wrapper {
-        /* width: 100%; */
-        margin: 0 auto;
+        width: fit-content;
+        display: flex;
     }
 
     .tab-button {
         display: inline-block;
-        border: none;
-        background-color: transparent;
-        font-size: 14px;
         font-weight: 500;
         line-height: 16px;
-        letter-spacing: 2px;
-        margin: 8px;
-        opacity: 50%;
     }
 
-    .tab-button::after {
-        content: "";
-        display: block;
-        width: 0;
-        border-bottom: 1px solid var(--clr-line-brown);
-        margin: 0 auto;
-        transition:all 0.3s linear 0s;
-        margin-top: 5px;
+    .event-tab {
+        width: 457px;
+        height: 288px;
+        margin: 40px auto 0 auto;
     }
 
-    .tab-button:hover {
-        opacity: 100%;
-        font-weight: 600;
-        transition-timing-function: ease;
-        transition: 1s;
+    .event-title {
+        font-size: 40px;
+        line-height: 56px;
+        letter-spacing: -0.5px;
     }
 
-    .tab-button:hover::after {
-        width: 60%;
+    .event-paragraph {
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: -0.225px;
     }
 }
 
