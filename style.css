@@ -4,6 +4,16 @@
     --clr-line-brown: rgb(161, 158, 158);
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 body {
     font-family: 'Spartan', sans-serif;
 }

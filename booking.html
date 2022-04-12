@@ -24,34 +24,35 @@
   </header>
   <section id="form-section" class="form-section hidden">
     <img class="lines" src="./images/patterns/pattern-lines 2.svg" alt="Decorative lines">
-    <form class="needs-validation" novalidate>
+
+    <form action="http://localhost:1000/submit" method="POST" class="needs-validation" novalidate>
       <div class="form-row">
         <div class="col-md-12 mb-3">
-          <input type="text" class="form-control" id="validationCustom01"  placeholder="Name" value="" required>
+          <input name="name" type="text" class="form-control" id="validationCustom01"  placeholder="Name" value="" required>
           <div class="valid-feedback"></div>
         </div>
       </div>
       <div class="form-row">
         <div class="col-md-12 mb-3">
-          <input type="email" class="form-control" id="validationCustom02" placeholder="Email" value="" required>
+          <input name="email" type="email" class="form-control" id="validationCustom02" placeholder="Email" value="" required>
           <div class="valid-feedback"></div>
         </div>
       </div>
       <div class="form-row">
         <div class="input-group col-md-2 mb-3 row">
           <label class="col-md-auto" for="validationCustom04">Pick a date</label>
-          <input class="form-control col" id="validationCustom04"  placeholder="DD" value="" required>
-          <input class="form-control col" type="month" class="form-control" id="validationCustom05"  placeholder="MM" value="" required>
-          <input class="form-control col longboi" type="year" class="form-control" id="validationCustom06"  placeholder="YYYY" value="" required>
+          <input name="day" type="number" min="0" max="31" class="form-control col" id="validationCustom04"  placeholder="DD" value="" required>
+          <input name="month" type="number" min="1" max="12"  class="form-control col" type="month" class="form-control" id="validationCustom05"  placeholder="MM" value="" required>
+          <input name="year" type="number" min="2022" max="2023" class="form-control col" type="year" class="form-control" id="validationCustom06"  placeholder="YYYY" value="" required>
           <div class="valid-feedback"></div>
         </div>
       </div>
         <div class="form-row">
           <div class="input-group row">
             <label class="col-md-auto" for="validationCustom05">Pick a time</label>
-            <input class="form-control" id="validationCustom07" value="" placeholder="09" required>
-            <input class="form-control" id="validationCustom08" value="" placeholder="00" required>
-            <select class="form-control longboi" id="FormControlSelect1">
+            <input name="hour" type="number" min="0" max="12" class="form-control" id="validationCustom07" value="" placeholder="09" required>
+            <input name="minute" type="number" min="0" max="59"  class="form-control" id="validationCustom08" value="" placeholder="00" required>
+            <select name="ampm" class="form-control" id="FormControlSelect1">
                 <option>AM</option>
                 <option>PM</option>
         </select>
@@ -69,6 +70,7 @@
       </div>
       <button class="btn btn-primary" type="submit">MAKE RESERVATION</button>
     </form>
+
   </section>
   <footer>
     <h2 class="logo">dine</h2>
