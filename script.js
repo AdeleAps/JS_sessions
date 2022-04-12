@@ -1,14 +1,16 @@
 function hideTab() {
-    let tab = document.getElementsByClassName("tab");
-    for (i = 0; i < tab.length; i++) {
+  let tab = document.getElementsByClassName("event-tab");
+  for (i = 0; i < tab.length; i++) {
     tab[i].style.display = "none";
-}};
+  }
+};
 
 function hideImage() {
-    let tab = document.getElementsByClassName("tab-img");
-    for (i = 0; i < tab.length; i++) {
+  let tab = document.getElementsByClassName("tab-img");
+  for (i = 0; i < tab.length; i++) {
     tab[i].style.display = "none";
-}};
+  }
+};
 
 $("#gathering-btn").click(function() {
    hideTab();
