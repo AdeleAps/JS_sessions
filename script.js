@@ -98,4 +98,14 @@ $("#minus").click(substract);
 
 // $("#choice").change();
 
+$( window ).resize(function() {
+  if ($(window).width() >= 1025)
+  {
+    $("#form-section").attr("style", "display: flex !important");
+  } else {
 
+    if (!$("#open-form").hasClass("btn-active")) {   
+    $("#form-section").attr("style", "display: none")}
+    else {
+    $("#form-section").attr("style", "display: flex")};
+}});

@@ -877,7 +877,7 @@ header {
 
 /* footer */
 
-/* footer {
+footer {
     background-color: var(--clr-bg-dark);
     color: white;
     text-align: center;
@@ -899,7 +899,7 @@ footer p {
 
 footer div:last-child {
     margin-top: 30px; 
-} */
+}
 
 /* ***** booking page ***** */
 
@@ -1125,6 +1125,7 @@ form .row {
 
     .form-section {
         height: 40vh;
+        display: block;
     }
     
     .form-section form {
