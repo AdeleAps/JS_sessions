@@ -25,7 +25,7 @@
   <section id="form-section" class="form-section hidden">
     <img class="lines" src="./images/patterns/pattern-lines 2.svg" alt="Decorative lines">
 
-    <form action="http://localhost:1000/submit" method="POST" class="needs-validation" novalidate>
+    <form action="http://localhost:1000/submit" id="form" method="POST" class="needs-validation" novalidate>
       <div class="form-row">
         <div class="col-md-12 mb-3">
           <input name="name" type="text" class="form-control" id="validationCustom01"  placeholder="Name" value="" required>
@@ -65,6 +65,7 @@
             <img id="minus" src="./images/icons/icon-minus.svg" alt="Minus sign">
             <span id="person-input">4 people</span>
             <img id="plus" src="./images/icons/icon-plus.svg" alt="Plus sign">
+            <input id="persons" name="persons" type="hidden">
           </div>
         </div>
       </div>

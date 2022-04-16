@@ -41,12 +41,20 @@ $("#open-form").click(function() {
   $("#open-form").toggleClass("btn-active");
 });
 
+function appendData() {
+let input = $("#person-input").text();
+let number = parseInt(input.charAt(0));
+let persons = $("#persons");
+persons.val(number);
+}
+
 (function() {
 'use strict';
 window.addEventListener('load', function() {
   let forms = document.getElementsByClassName('needs-validation');
   let validation = Array.prototype.filter.call(forms, function(form) {
     form.addEventListener('submit', function(event) {
+      appendData();
       if (form.checkValidity() === false) {
         event.preventDefault();
         event.stopPropagation();
@@ -60,30 +68,30 @@ window.addEventListener('load', function() {
 // person selector in the form
 
 let substract = function() {
-let input = $("#person-input").text();
-let number = parseInt(input.charAt(0));
-let newNumber = number - 1;
+  let input = $("#person-input").text();
+  let number = parseInt(input.charAt(0));
+  let newNumber = number - 1;
 
-$('#plus').css("pointerEvents", "auto");
-$("#person-input").text(newNumber + " people");
-if (newNumber == 1) {
-  $("#person-input").text(newNumber + " person");
-  $('#minus').css("pointerEvents", "none");
+  $('#plus').css("pointerEvents", "auto");
+  $("#person-input").text(newNumber + " people");
+  if (newNumber == 1) {
+    $("#person-input").text(newNumber + " person");
+    $('#minus').css("pointerEvents", "none");
 }
 }
 
 let add = function() {
-let input = $("#person-input").text();
-let number = parseInt(input.charAt(0));
-let newNumber = number + 1;
+  let input = $("#person-input").text();
+  let number = parseInt(input.charAt(0));
+  let newNumber = number + 1;
 
-$('#minus').css("pointerEvents", "auto");
-$("#person-input").text(newNumber + " people");
-if (newNumber == 1) {
-  $("#person-input").text(newNumber + " person")
+  $('#minus').css("pointerEvents", "auto");
+  $("#person-input").text(newNumber + " people");
+    if (newNumber == 1) {
+    $("#person-input").text(newNumber + " person")
 }
-else if (newNumber == 8) {
-  $('#plus').css("pointerEvents", "none");
+    else if (newNumber == 8) {
+    $('#plus').css("pointerEvents", "none");
 }
 }
 
@@ -98,7 +106,7 @@ $("#minus").click(substract);
 
 // $("#choice").change();
 
-$( window ).resize(function() {
+$(window).resize(function() {
   if ($(window).width() >= 1025)
   {
     $("#form-section").attr("style", "display: flex !important");
@@ -109,3 +117,10 @@ $( window ).resize(function() {
     else {
     $("#form-section").attr("style", "display: flex")};
 }});
+
+
+
+
+
+
+
