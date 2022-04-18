@@ -19,6 +19,7 @@ body {
 }
 
 .tabs .hidden,
+.form-section .hidden,
 .form-section  {
     display: none;
 }
@@ -1030,7 +1031,7 @@ footer div:last-child {
 
 .form-section form {
     position: relative;
-    z-index: 2;
+    z-index: 3;
     bottom: 75px;
     background-color: white;
     width: 85vw;
@@ -1112,6 +1113,82 @@ form .row {
 .reservations .form-section .lines {
     display: none;
 }
+/* 
+.popup-wrap {
+    width:100%;
+    min-height:150%;
+    display:none;
+    position:absolute;
+    top:0px;
+    left:0px;
+    content:'';
+    background:rgba(0,0,0,0.85);
+    z-index: 4;
+  }
+  
+.popup-box {
+    width:400px;
+    padding: 40px;
+    transform:translate(-50%, -50%) scale(0.5);
+    position:absolute;
+    top:35%;
+    left:50%;
+    box-shadow:0px 2px 16px rgba(0,0,0,0.5);
+    border-radius:3px;
+    background:#fff;
+    text-align:center;
+    z-index: 4;
+}
+
+.popup-box h2 {
+      color:#1a1a1a;
+      margin-bottom: 15px;
+}
+
+.popup-box h3 {
+      color:rgb(99, 96, 96);
+}
+
+.popup-box .close-btn {
+    width:35px;
+    height:35px;
+    display:inline-block;
+    position:absolute;
+    top:10px;
+    right:10px;
+    -webkit-transition:all ease 0.5s;
+    transition:all ease 0.5s;
+    border-radius:1000px;
+    background:#d75f70;
+    font-weight:bold;
+    text-decoration:none;
+    color:#fff;
+    line-height:200%;
+    text-align: center;
+}
+    
+.popup-box .close-btn:hover {
+      -webkit-transform:rotate(180deg);
+      transform:rotate(180deg);
+}
+
+    
+    
+.transform-in, .transform-out {
+    display:block;
+    -webkit-transition:all ease 0.5s;
+    transition:all ease 0.5s;
+}
+  
+.transform-in {
+      -webkit-transform:translate(-50%, -50%) scale(1);
+      transform:translate(-50%, -50%) scale(1);
+  }
+  
+.transform-out {
+      -webkit-transform:translate(-50%, -50%) scale(0.5);
+      transform:translate(-50%, -50%) scale(0.5);
+  } */
 
 /* booking - tablet */
 

@@ -118,7 +118,22 @@ $(window).resize(function() {
     $("#form-section").attr("style", "display: flex")};
 }});
 
+// popup
 
+//   $('.popup-close').click(function(e) {
+//     $('.popup-wrap').fadeOut(500);
+//     $('.popup-box').removeClass('transform-in').addClass('transform-out');
+
+//     e.preventDefault();
+// });
+
+// $(document).ready(function() {
+//   const form = $("#form");
+//   form.submit(function() {
+//     $('.popup-wrap').fadeIn(500);
+//     $('.popup-box').removeClass('transform-out').addClass('transform-in');
+//   });
+// });
 
 
 

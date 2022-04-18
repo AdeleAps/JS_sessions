@@ -1,12 +1,4 @@
 const mysql = require("mysql");
-const con = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "Restaurant",
-});
-
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
@@ -22,6 +14,13 @@ app.listen(port, () => {
 
 app.post('/submit', function(req, res){
     res.redirect("http://127.0.0.1:5500/booking.html");
+
+    const con = mysql.createConnection({
+        host: "localhost",
+        user: "root",
+        password: "",
+        database: "Restaurant",
+    });
 
     let name = req.body.name;
     let email = req.body.email;
@@ -51,7 +50,6 @@ app.post('/submit', function(req, res){
     
     con.connect(function(err) {
         if (err) throw err;
-        console.log("Connected!");
         let sql = `INSERT INTO Reservations (Name, Email, Date, Time, Persons) VALUES ('${name}', '${email}', '${completeDate}', '${completeTime}', '${persons}')`
         con.query(sql, function (err, result) {
             if (err) throw err;
