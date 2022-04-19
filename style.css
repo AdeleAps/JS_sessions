@@ -57,7 +57,7 @@ body {
 
 .button {
     position: absolute;
-
+    border-radius: 0.25rem;
     bottom: 0%;
     border: 1px solid #FFFFFF;
     box-sizing: border-box;
@@ -69,6 +69,9 @@ body {
     color: var(--clr-bg-dark);
     background-color: white;
     transition-delay: .3s;
+        border-color: var(--clr-bg-dark);
+    border-style: solid;
+    border-width: 1px;
 }
 
 .section {
@@ -213,6 +216,10 @@ body {
     color: white;
     width: 100%;
     position: absolute;
+}
+
+.main-mobile {
+    overflow: hidden;
 }
 
 .logo-wrapper .logo-svg {
@@ -670,8 +677,6 @@ body {
         top: 558px;
         width: 245px;
         height: 64px;
-        background-color: #FFFFFF;
-        color: #111111;
     }
 
     .subsection {
@@ -842,8 +847,8 @@ body {
         width: 245px;
         right: 365px;
         border: 1px solid #111111;
-        background-color: transparent;
-        color: #111111;
+        background-color: --clr-bg-dark;
+        color: white;
         top: 447px !important;
     }
 
@@ -882,8 +887,8 @@ body {
         right: 165px;
         width: 245px;
         height: 64px;
-        background-color: #FFFFFF;
-        color: #111111;
+        background-color: --clr-bg-dark;
+        color: white;
         top: 88px;
         padding: 0;
     }
@@ -1230,14 +1235,13 @@ form .row {
     footer {
         display: flex;
         padding: 70px 35px;
-        align-items: flex-start;
+        align-items: space-around;
         justify-content: center;
         text-align: justify;
     }
 
     footer .logo {
-        position: absolute;
-        left: 50px;
+        margin-right: 15%;
     }
     
     footer div:last-child {
