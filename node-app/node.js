@@ -13,7 +13,7 @@ app.listen(port, () => {
 });
 
 app.post('/submit', function(req, res){
-    res.redirect("http://127.0.0.1:5500/booking.html");
+    res.redirect("http://127.0.0.1:5500/booking.html?popup=1");
 
     const con = mysql.createConnection({
         host: "localhost",

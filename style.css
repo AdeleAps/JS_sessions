@@ -1118,7 +1118,7 @@ form .row {
 .reservations .form-section .lines {
     display: none;
 }
-/* 
+
 .popup-wrap {
     width:100%;
     min-height:150%;
@@ -1177,8 +1177,6 @@ form .row {
       transform:rotate(180deg);
 }
 
-    
-    
 .transform-in, .transform-out {
     display:block;
     -webkit-transition:all ease 0.5s;
@@ -1193,7 +1191,7 @@ form .row {
 .transform-out {
       -webkit-transform:translate(-50%, -50%) scale(0.5);
       transform:translate(-50%, -50%) scale(0.5);
-  } */
+}
 
 /* booking - tablet */
 
